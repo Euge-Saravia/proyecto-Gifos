@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="../imagenes/logo-desktop.svg">
+    <script src="https://kit.fontawesome.com/9f3972be6d.js" crossorigin="anonymous"></script>
+    <title>Mis Gifos</title>
+    <link rel="stylesheet" href="../Styles/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="topBottom">
+            <hr>
+        </div>
+        <div id="container">
+            <div id="logo">
+                <!-- Puse un a alrededor de las img para que cuando se haga click en el logo vaya a la home -->
+                <a href="/">
+                    <img class="logoOne" src="../imagenes/logo-mobile.svg" alt="logo de la página">
+                    <img class="logoTwo" src="../imagenes/logo-desktop.svg" alt="logo de la pàgina">
+                    <img class="logoThree" src="../imagenes/logo-mobile-modo-noct.svg" alt="logo de la pàgina">
+                    <img class="logoFour" src="./imagenes/Logo-modo-noc.svg" alt="logo de la página">
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <img class="menuHamb" src="../imagenes/burger.svg" alt="icono del menu hamburguesa" />
+                <img class="closeMenHamb" src="../imagenes/close.svg" alt="icono cierre menu hamburguesa" />
+                <img class="hambModNoc" src="../imagenes/burger-modo-noct.svg" alt="icono del menu hamburguesa" />
+                <img class="closeModNoc" src="../imagenes/close-modo-noct.svg" alt="icono cierre menu hamburguesa" />
+            </div>
+        </div>
+        <nav>
+            <div class="header">
+                <ul id="navList">
+                    <li id="darkmodo"><a id="blackModo" href="#">Modo Nocturno</a></li>
+                    <li id="sunmodo"><a id="lightModo" href="#">Modo Diurno</a>
+                        <div class="nav">
+                            <hr>
+                        </div>
+                    </li>
+                    <li><a href="favorites.html">Favoritos</a>
+                        <div class="nav">
+                            <hr>
+                        </div>
+                    </li>
+                    <li><a href="misgifos.html">Mis GIFOS</a>
+                        <div class="nav">
+                            <hr>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="headerMisGifos">
+        <img class="misGifosImg" src="./imagenes/icon-mis-gifos.svg" alt="icono de la página mis gifos">
+        <h1 class="misGifosTitle">Mis Gifos</h1>
+    </div>
+    <div class="containerMisGifos">
+        <div class="imgFilmadora">
+            <img src="./imagenes/camara.svg" alt="icono camara de filmación" class="film camaraModoLight">
+            <img src="./imagenes/camara-modo-noc.svg" alt="icono camara de filmación" class="film camaraModoNoc">
+            <img src="./imagenes/element-luz-camara.svg" alt="haz de luz que emite la camara de filmacion" class="film">
+        </div>
+        <div class="grabacion">
+            <div class="esquina1"></div>
+            <div class="esquina2"></div>
+            <div class="esquina3"></div>
+            <div class="esquina4"></div>
+            <div class="video">
+                <div class="firstTitle">
+                    <h1 class="miGifTitle first">Aquí podrás crear tus propios <span>GIFOS</span></h1>
+                    <p class="miGifText first">¡Crea tu GIFO en sólo 3 pasos! <br> (sólo necesitas una cámara para
+                        grabar un
+                        video)</p>
+                </div>
+                <div class="secondTitle">
+                    <h1 class="miGifTitle second">¿Nos das acceso a tu cámara?</h1>
+                    <p class="miGifText second">El acceso a tu camara será válido sólo por el tiempo en el que estés
+                        creando
+                        el GIFO</p>
+                </div>
+                <video class="video-stream"></video>
+                <img class="gif-grabado" src="" alt="">
+                <div class="overlay-video" id="overlay-video">
+                    <div class="overlay-video-textos">
+                        <img src="./imagenes/loader.svg" alt="loading gifo" class="overlay-video-icon">
+                        <p class="overlay-video-parrafo">Estamos subiendo tu GIFO</p>
+                        <img src="./imagenes/ok.svg" alt="ok tu gif se ha subido" class="overlay-video-icon okIcon">
+                        <p class="overlay-video-parrafo okText">Tu gif se ha subido correctamente</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="imgPelicula">
+            <img src="./imagenes/pelicula.svg" alt="imagen de rollo de pelicula" class="pelicula">
+            <img src="./imagenes/pelicula-modo-noc.svg" alt="imagen rollo de pelicula" class="peliculaModNoc">
+        </div>
+    </div>
+    <div class="containerPasos">
+        <div class="crearPasos">
+            <p class="creargifo-pasos-numero one">1</p>
+            <p class="creargifo-pasos-numero two">2</p>
+            <p class="creargifo-pasos-numero three">3</p>
+        </div>
+        <div class="containerContador">
+            <p class="contador-grabacion">00:00</p>
+            <button class="contador-repetircaptura">repetir captura</button>
+        </div>
+        <div class="separadorMisGifos">
+        </div>
+        <div class="btnMisGifos">
+            <button id="comenzar" class="btnGenerico">COMENZAR</button>
+            <button id="grabar" class="btnGenerico btnGrabar">GRABAR</button>
+            <button id="finalizar" class="btnGenerico thirdStep">FINALIZAR</button>
+            <a id="btnDownload" class="btnGenerico fourStep descargarGif" title="downloadGif" href="" download="">Descarga
+                tu Gif</a>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="socialmedia">
+            <h4>Compartir en:</h4>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img src="../imagenes/icon_facebook.svg"
+                    alt="icono de facebook"></a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener"><img src="../imagenes/icon-twitter.svg"
+                    alt="icono de twitter"></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img
+                    src="../imagenes/icon_instagram.svg" alt="icono de instagram"></a>
+            <p class="copyright">&copy; GIFOS 2020 All Rights Reserved.</p>
+        </div>
+    </footer>
+    <div class="topBottom">
+        <hr>
+    </div>
+</body>
+<!-- recommended -->
+<script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+<script src="./Javascript/index.js"></script>
+<script src="./Javascript/creatugif.js"></script>
+
+</html>

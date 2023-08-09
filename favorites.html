@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="../imagenes/logo-desktop.svg">
+    <script src="https://kit.fontawesome.com/9f3972be6d.js" crossorigin="anonymous"></script>
+    <title>Favorites</title>
+    <link rel="stylesheet" href="../Styles/index.css">
+</head>
+<body>
+    <header>
+        <div class="topBottom">
+            <hr>
+        </div>
+        <div id="container">
+            <div id="logo">
+                <!-- Puse un a alrededor de las img para que cuando se haga click en el logo vaya a la home -->
+                <a href="/">
+                    <img class="logoOne" src="../imagenes/logo-mobile.svg" alt="logo de la página">
+                    <img class="logoTwo" src="../imagenes/logo-desktop.svg" alt="logo de la pàgina">
+                    <img class="logoThree" src="../imagenes/logo-mobile-modo-noct.svg" alt="logo de la pàgina">
+                    <img class="logoFour" src="./imagenes/Logo-modo-noc.svg" alt="logo de la página">
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <img class="menuHamb" src="../imagenes/burger.svg" alt="icono del menu hamburguesa" />
+                <img class="closeMenHamb" src="../imagenes/close.svg" alt="icono cierre menu hamburguesa" />
+                <img class="hambModNoc" src="../imagenes/burger-modo-noct.svg" alt="icono del menu hamburguesa" />
+                <img class="closeModNoc" src="../imagenes/close-modo-noct.svg" alt="icono cierre menu hamburguesa" />
+            </div>
+        </div>
+        <nav>
+            <div class="header">
+                <ul id="navList">
+                    <li id="darkmodo"><a id="blackModo" href="#">Modo Nocturno</a></li>
+                    <li id="sunmodo"><a id="lightModo" href="#">Modo Diurno</a>
+                        <div class="nav">
+                            <hr>
+                        </div>
+                    </li>
+                    <li><a href="favorites.html">Favoritos</a>
+                        <div class="nav">
+                            <hr>
+                        </div>
+                    </li>
+                    <li><a href="misgifos.html">Mis GIFOS</a>
+                        <div class="nav">
+                            <hr>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="favoritesHeader">
+        <img class="logoFav" src="./imagenes/icon-favoritos.svg" alt="logo favoritos">
+        <h2 class="pageTitle">Favoritos</h2>
+    </div>
+    <div class="favorites">
+        <img class="fav" src="./imagenes/icon-fav-sin-contenido.svg" alt="icono de favoritos agrega contenido">
+        <h3 class="favoritesGifs">"¡Guarda tu primer GIFO en Favoritos para que se muestre aquí!" </h3>
+    </div>
+    <div class="renderFavoritos">
+        <!-- Acá se van a renderizar los gif guardados en favoritos -->
+    </div>
+    <section id="carrouselGifos">
+        <h1>Trending GIFOS</h1>
+        <h3>Mira los últimos GIFOS de nuestra comunidad</h3>
+        <div class="gifos">
+            <!-- Aca se van a renderizar los gifts -->
+            <img class="btnSliderLeft" src="../imagenes/button-slider-left.svg" alt="flcha mover a la izquierda">
+            <img class="btnSliderRight" src="../imagenes/Button-Slider-right.svg" alt="flecha mover a la derecha">
+        </div>
+    </section>
+    <footer>
+        <div class="socialmedia">
+            <h4>Compartir en:</h4>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img src="../imagenes/icon_facebook.svg" alt="icono de facebook"></a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener"><img src="../imagenes/icon-twitter.svg" alt="icono de twitter"></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="../imagenes/icon_instagram.svg" alt="icono de instagram"></a>
+            <p class="copyright">&copy; GIFOS 2020 All Rights Reserved.</p>
+        </div>
+    </footer>
+    <div class="topBottom">
+        <hr>
+    </div>
+    <div class="modal-activo">
+        <button class="modal-btn-close">
+            <img src="../imagenes/close.svg" alt="boton cierre del gifo en pantalla completa">
+        </button>
+        <img class="modal-activado" src="" alt="gif en pantalla completa">
+        <div class="modal-info">
+            <div class="modal-textos">
+                <p class="modal-user"></p>
+                <p class="modal-title"></p>
+            </div>
+            <div class="favDownload">
+                <button class="modal-icons">
+                    <img class="heartFav" src="../imagenes/icon-fav.svg" alt="boton para agregar a favoritos">
+                    <img class="heartFavActive" src="./imagenes/icon-fav-active.svg" alt="corazón cuando esta guardado en favorito">
+                </button>
+                <a class="modal-descarga" download title="Download">
+                    <img src="../imagenes/icon-download.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./Javascript/index.js"></script>
+<script src="./Javascript/favorites.js"></script>
+</html>
